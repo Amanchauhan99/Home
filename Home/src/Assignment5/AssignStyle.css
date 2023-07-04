@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.continer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+}
+.homeContainer{
+    height:300px;
+    /* border:2px solid red; */
+    margin:170px;
+    width: 800px;
+}
+.top{
+    /* border:2px solid blue; */
+    height:10% ;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.topleft{
+    color: white;
+}
+
+.topright{
+    display:flex;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+}
+
+ .bottom{
+    /* border:2px solid pink; */
+    height:90% ;
+    width:100%;
+}
