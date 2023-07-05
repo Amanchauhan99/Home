@@ -36,11 +36,12 @@ import TodoApp from './TodoApp/MainTodo';
 import WarpCom from './Home6/WrapCom';
 import Main from './Home13/Main';
 import Profile from './Home22/Profile';
+import Index from './Homework/Index';
 
 
 function App() {
   return (
-    <Profile/>
+    <Index/>
   );
 }
 
