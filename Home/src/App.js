@@ -34,10 +34,12 @@ import ItemList from './Assignment13/ClassItem';
 import AddItemForm from './Assignment13/AddItemForm';
 import TodoApp from './TodoApp/MainTodo';
 import WarpCom from './Home6/WrapCom';
+import Main from './Home13/Main';
+
 
 function App() {
   return (
-    <WarpCom/>
+    <Main/>
   );
 }
 
