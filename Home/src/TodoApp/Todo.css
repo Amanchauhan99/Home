@@ -1,0 +1,46 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainbox{
+    margin: 150px;
+    border: 2px solid violet;
+    width: 300px;
+    
+}
+input{
+    margin-left: 20px;
+}
+.todo{
+    
+    border: 2px solid blue;
+    width: 235px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todohead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+    background-color: #f1f1f1;
+}
+.item1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgba(255, 0, 0, 0.263); /* Red border */
+    background-color: #f1f1f1; /* Inner color */
+    color: #333; 
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
