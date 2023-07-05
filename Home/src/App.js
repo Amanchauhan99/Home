@@ -35,11 +35,12 @@ import AddItemForm from './Assignment13/AddItemForm';
 import TodoApp from './TodoApp/MainTodo';
 import WarpCom from './Home6/WrapCom';
 import Main from './Home13/Main';
+import Profile from './Home22/Profile';
 
 
 function App() {
   return (
-    <Main/>
+    <Profile/>
   );
 }
 
