@@ -41,7 +41,7 @@ import Index from './Homework/Index';
 
 function App() {
   return (
-    <Index/>
+    <Main/>
   );
 }
 
