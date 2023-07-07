@@ -1,36 +1,46 @@
 import React, { Component } from 'react';
 
 class AddItemForm extends Component {
-  state = {
-    name: '',
-    description: '',
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      description: ''
+    };
+  }
 
   componentDidUpdate(prevProps) {
-    if (prevProps.itemId !== this.props.itemId) {
-      // Reset the form fields when the itemId prop changes
-      this.setState({ name: '', description: '' });
+    if (this.props.itemId !== prevProps.itemId) {
+      // Update form fields when itemId prop changes
+      this.setState({
+        name: this.props.item.name,
+        description: this.props.item.description
+      });
     }
   }
 
-  handleChange = event => {
-    this.setState({ [event.target.name]: event.target.value });
+  handleInputChange = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
   };
 
   handleSubmit = event => {
     event.preventDefault();
-    // Perform the action to add a new item using the form data
-    const newItem = {
-      name: this.state.name,
-      description: this.state.description,
-    };
-    // Code for adding the new item...
+    // Add new item using this.state.name and this.state.description
+    // e.g., make an API call or update the parent component's state
+    console.log('New item:', this.state.name, this.state.description);
+    // Reset form fields
+    this.setState({
+      name: '',
+      description: ''
+    });
   };
 
   render() {
     return (
       <div>
-        <h1>Add Item</h1>
+        <h2>Add Item</h2>
         <form onSubmit={this.handleSubmit}>
           <label>
             Name:
@@ -38,16 +48,15 @@ class AddItemForm extends Component {
               type="text"
               name="name"
               value={this.state.name}
-              onChange={this.handleChange}
+              onChange={this.handleInputChange}
             />
           </label>
           <label>
             Description:
-            <input
-              type="text"
+            <textarea
               name="description"
               value={this.state.description}
-              onChange={this.handleChange}
+              onChange={this.handleInputChange}
             />
           </label>
           <button type="submit">Add</button>
